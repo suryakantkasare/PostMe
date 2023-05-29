@@ -1,5 +1,16 @@
-import '@/styles/globals.css'
+import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
+import { Provider } from "react-redux";
+import { store } from "../Redux/store";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return (
+    <Provider store={store}>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </Provider>
+  );
 }
+
+export default MyApp;

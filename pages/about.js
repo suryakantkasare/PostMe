@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function about() {
   return (
-    <div></div>
+    <div>about</div>
   )
 }
