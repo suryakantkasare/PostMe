@@ -5,7 +5,7 @@ import { BiTerminal } from "react-icons/bi";
 import { HiSun, HiMoon } from "react-icons/hi";
 import { CgUserlane } from "react-icons/cg";
 import { AiOutlineGoogle } from "react-icons/ai";
-import { auth, provider } from "../Firebase/Firebase";
+// import { auth, provider } from "../Firebase/Firebase";
 import { signInWithPopup, signOut } from "firebase/auth";
 import { IoLogOutOutline } from "react-icons/io5";
 import { SiCodefactor } from "react-icons/si";
@@ -37,45 +37,45 @@ function Navbar({ topics }) {
     }
   };
   const handelSignOut = () => {
-    signOut(auth)
-      .then((res) => {
-        setLogin(false);
-        localStorage.removeItem("user");
-        dispatch({ type: "REMOVE_USER" });
-        setViewAlert(true);
-        setAlertMessage("Hope to see you again !!");
-        setTimeout(() => {
-          setViewAlert(false);
-        }, 2000);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    // signOut(auth)
+    //   .then((res) => {
+    //     setLogin(false);
+    //     localStorage.removeItem("user");
+    //     dispatch({ type: "REMOVE_USER" });
+    //     setViewAlert(true);
+    //     setAlertMessage("Hope to see you again !!");
+    //     setTimeout(() => {
+    //       setViewAlert(false);
+    //     }, 2000);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
   };
 
   const handelSignIn = () => {
-    signInWithPopup(auth, provider)
-      .then((res) => {
-        const userObj = {
-          name: res.user.displayName,
-          photo: res.user.photoURL,
-          token: res.user.accessToken,
-          uid: res.user.uid,
-        };
+    // signInWithPopup(auth, provider)
+    //   .then((res) => {
+    //     const userObj = {
+    //       name: res.user.displayName,
+    //       photo: res.user.photoURL,
+    //       token: res.user.accessToken,
+    //       uid: res.user.uid,
+    //     };
 
-        localStorage.setItem("user", JSON.stringify(userObj));
-        dispatch({ type: "STORE_USER", payload: userObj });
+    //     localStorage.setItem("user", JSON.stringify(userObj));
+    //     dispatch({ type: "STORE_USER", payload: userObj });
 
-        setLogin(true);
-        setViewAlert(true);
-        setAlertMessage(`Hello ${res.user.displayName}`);
-        setTimeout(() => {
-          setViewAlert(false);
-        }, 2000);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    //     setLogin(true);
+    //     setViewAlert(true);
+    //     setAlertMessage(`Hello ${res.user.displayName}`);
+    //     setTimeout(() => {
+    //       setViewAlert(false);
+    //     }, 2000);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   };
 
   return (
