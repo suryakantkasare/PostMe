@@ -10,7 +10,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.3",
-    "firebase": "^9.6.8",
+    "firebase": "^9.22.1",
     "firebase-admin": "^10.0.2",
     "gray-matter": "^4.0.3",
     "markdown-to-txt": "^2.0.0",
