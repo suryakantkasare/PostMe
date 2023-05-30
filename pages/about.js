@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { FaLaptop, FaTwitter } from "react-icons/fa";
+import { FaLaptop } from "react-icons/fa";
 import { getAllTopics } from "../Lib/Data";
 
 export const getStaticProps = () => {
