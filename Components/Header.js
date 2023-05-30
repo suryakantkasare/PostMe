@@ -20,7 +20,7 @@ function Header({ topic, topicName, topicCount }) {
               <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-blue-400 to-purple-500 lg:inline">
                 PostMe
               </span>{" "}
-              <span>Build 🚀</span>
+              <span>🚀</span>
             </h1>
           </div>
         </div>
