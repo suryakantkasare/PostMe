@@ -40,7 +40,7 @@
 </div>
 
 <div align="center">
-  <img alt="PostMe 🚀" src="https://media.licdn.com/dms/image/D4E22AQFXbO49Q8SZhQ/feedshare-shrink_800/0/1685434710221?e=1688601600&v=beta&t=9PmoPp7efWIOkm7QorzIOR7WwnTG1s5rHfSC-ziFjfs" />
+  <img alt="PostMe 🚀" src="https://media.licdn.com/dms/image/D4E22AQFXbO49Q8SZhQ/feedshare-shrink_800/0/1685434710221?e=1710374400&v=beta&t=JB5DG1wcs1_frRbn8cW5QO6R1af9lixttGXXALq-HZU" />
 </div>
 
 <br/>
